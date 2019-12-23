@@ -1,18 +1,11 @@
-import plane
+from plane import Plane
 import unittest
 
 class Airport(object):
-    
+
     def __init__(self):
         self.planes = []
+        self.plane = Plane()
 
-
- # class BasicFunction(object):
- #    def __init__(self):
- #        self.state = 0
- #
- #    def increment_state(self):
- #        self.state += 1
- #
- #    def clear_state(self):
- #        self.state = 0
+    def land_plane(self):
+        self.planes.append(self.plane)
